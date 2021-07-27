@@ -27,11 +27,29 @@
     <None Remove="ClientApp\src\app\home-module.ts" />
     <None Remove="ClientApp\src\app\home\index.ts" />
     <None Remove="ClientApp\src\app\home\pages\index.ts" />
+    <None Remove="ClientApp\src\app\reports\index.ts" />
+    <None Remove="ClientApp\src\app\reports\pages\index.ts" />
+    <None Remove="ClientApp\src\app\reports\reports-routing.module.ts" />
+    <None Remove="ClientApp\src\app\schedule\index.ts" />
+    <None Remove="ClientApp\src\app\schedule\pages\index.ts" />
+    <None Remove="ClientApp\src\app\schedule\schedule-routing.module.ts" />
+    <None Remove="ClientApp\src\app\sources\index.ts" />
+    <None Remove="ClientApp\src\app\sources\pages\index.ts" />
+    <None Remove="ClientApp\src\app\sources\sources-routing.module.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\home\index.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\home\pages\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\reports\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\reports\pages\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\reports\reports-routing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\schedule\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\schedule\pages\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\schedule\schedule-routing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\sources\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\sources\pages\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\sources\sources-routing.module.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

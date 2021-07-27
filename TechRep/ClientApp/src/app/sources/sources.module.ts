@@ -1,12 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+import { SourcesRoutingModule } from './sources-routing.module';
+import { SourcesComponent } from './pages/sources/sources.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [SourcesComponent],
   imports: [
-    CommonModule
-  ]
+    SourcesRoutingModule
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SourcesModule { }

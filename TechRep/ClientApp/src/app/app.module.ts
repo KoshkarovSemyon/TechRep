@@ -5,6 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { HomeModule } from './home/home.module';
+import { SourcesModule } from './sources/sources.module';
+import { ReportsModule } from './reports/reports.module';
+import { ScheduleModule } from './schedule/schedule.module';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -29,7 +32,10 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ]),
-    HomeModule
+    HomeModule,
+    SourcesModule,
+    ReportsModule,
+    ScheduleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

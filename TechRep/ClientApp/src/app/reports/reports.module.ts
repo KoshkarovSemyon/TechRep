@@ -1,12 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+import { ReportsRoutingModule } from './reports-routing.module';
+import { ReportsComponent } from './pages/reports/reports.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ReportsComponent],
   imports: [
-    CommonModule
-  ]
+    ReportsRoutingModule
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ReportsModule { }
