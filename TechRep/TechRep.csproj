@@ -24,6 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\extraction\extraction-routing.module.ts" />
+    <None Remove="ClientApp\src\app\extraction\index.ts" />
+    <None Remove="ClientApp\src\app\extraction\pages\index.ts" />
     <None Remove="ClientApp\src\app\home-module.ts" />
     <None Remove="ClientApp\src\app\home\index.ts" />
     <None Remove="ClientApp\src\app\home\pages\index.ts" />
@@ -39,6 +42,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\extraction\extraction-routing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\extraction\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\extraction\pages\index.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\home\index.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\home\pages\index.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\reports\index.ts" />

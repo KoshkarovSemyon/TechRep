@@ -8,6 +8,7 @@ import { HomeModule } from './home/home.module';
 import { SourcesModule } from './sources/sources.module';
 import { ReportsModule } from './reports/reports.module';
 import { ScheduleModule } from './schedule/schedule.module';
+import { ExtractionModule } from './extraction/extraction.module';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -35,7 +36,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     HomeModule,
     SourcesModule,
     ReportsModule,
-    ScheduleModule
+    ScheduleModule,
+    ExtractionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
