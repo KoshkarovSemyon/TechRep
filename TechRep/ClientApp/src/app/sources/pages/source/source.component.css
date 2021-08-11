@@ -1,0 +1,12 @@
+.div_table {
+  display: table;
+  border-spacing: 3px;
+}
+
+.div_table_row {
+  display: table-row;
+}
+
+.div_table_cell {
+  display: table-cell;
+}

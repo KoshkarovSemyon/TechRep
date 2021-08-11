@@ -1,3 +1,23 @@
 .example-tab-icon {
   margin-right: 8px;
 }
+
+.div_table {
+  display: table;
+  border-spacing: 3px;
+}
+
+.div_table_row {
+  display: table-row;
+}
+
+.div_table_cell {
+  display: table-cell;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  height: 30px;
+  border-left: solid 1px #eee;
+  border-bottom: solid 1px #feb41b;
+  position: relative;
+  text-align: center;
+}

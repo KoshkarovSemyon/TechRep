@@ -1,5 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 import { SourcesRoutingModule } from './sources-routing.module';
 import { SourcesComponent } from './pages/sources/sources.component';
 import { MatTreeModule } from '@angular/material/tree';
@@ -9,6 +9,7 @@ import { SourceComponent } from './pages/source/source.component';
 @NgModule({
   declarations: [SourcesComponent, SourceComponent],
   imports: [
+    CommonModule,
     SourcesRoutingModule,
     MatTreeModule,
     MatIconModule

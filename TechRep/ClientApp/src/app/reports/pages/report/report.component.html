@@ -1,22 +1,262 @@
-<p>report works!</p>
+<h2>Технический отчет Обжигового цеха</h2>
 
 <mat-tab-group animationDuration="1000ms">
-  <mat-tab label="Диаграмма 1" style="color: #feb41b;">
+  <mat-tab label="Загружено" style="color: #feb41b;">
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon" aria-hidden="false" aria-label="Загружено">arrow_forward</mat-icon>
+      Загружено
+    </ng-template>
     <div style="position: relative; left: 0px; top: 0px; height: 560px; width: 100%; border: solid 1px #999;">
-      <p style="float: right; margin-right: 50px;">Ширина диапазона: {{counter}}</p>
-      <svg class="group1" width="100%" height="520"></svg>
+      <div class="div_table" style="border-collapse: collapse; width:100%">
+          <div class="div_table_row">
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">№ пп</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Наименование видов сырья и продукции</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Количество</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Zn</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cd</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cu</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Pb</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Au</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Ag</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">S</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Количество</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Zn</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cd</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cu</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Pb</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Au</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Ag</div>
+            <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">S</div>
+          </div>
+          <div class="div_table_row" *ngFor="let row of data">
+            <div class="div_table_cell">
+              {{row.id}}
+            </div>
+            <div class="div_table_cell" style="text-align:left">
+              {{row.name}}
+            </div>
+            <div class="div_table_cell">
+              {{row.qty}}
+            </div>
+            <div class="div_table_cell">
+              {{row.Zn}}
+            </div>
+            <div class="div_table_cell">
+              {{row.Cd}}
+            </div>
+            <div class="div_table_cell">
+              {{row.Cu}}
+            </div>
+            <div class="div_table_cell">
+              {{row.Pb}}
+            </div>
+            <div class="div_table_cell">
+              {{row.Au}}
+            </div>
+            <div class="div_table_cell">
+              {{row.Ag}}
+            </div>
+            <div class="div_table_cell">
+              {{row.S}}
+            </div>
+            <div class="div_table_cell">
+              {{row._qty}}
+            </div>
+            <div class="div_table_cell">
+              {{row._Zn}}
+            </div>
+            <div class="div_table_cell">
+              {{row._Cd}}
+            </div>
+            <div class="div_table_cell">
+              {{row._Cu}}
+            </div>
+            <div class="div_table_cell">
+              {{row._Pb}}
+            </div>
+            <div class="div_table_cell">
+              {{row._Au}}
+            </div>
+            <div class="div_table_cell">
+              {{row._Ag}}
+            </div>
+            <div class="div_table_cell">
+              {{row._S}}
+            </div>
+          </div>
+        </div>
+      </div>
+  </mat-tab>
+  <mat-tab label="Получено">
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon" aria-hidden="false" aria-label="Получено">arrow_upwards</mat-icon>
+      Получено
+    </ng-template>
+    <div style="position: relative; left: 0px; top: 0px; height: 560px; width: 100%; border: solid 1px #999;">
+      <div class="div_table" style="border-collapse: collapse; width:100%">
+        <div class="div_table_row">
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">№ пп</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Наименование видов сырья и продукции</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Количество</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Zn</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cd</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cu</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Pb</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Au</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Ag</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">S</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Количество</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Zn</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cd</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cu</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Pb</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Au</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Ag</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">S</div>
+        </div>
+        <div class="div_table_row" *ngFor="let row of data1">
+          <div class="div_table_cell">
+            {{row.id}}
+          </div>
+          <div class="div_table_cell" style="text-align:left">
+            {{row.name}}
+          </div>
+          <div class="div_table_cell">
+            {{row.qty}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Zn}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Cd}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Cu}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Pb}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Au}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Ag}}
+          </div>
+          <div class="div_table_cell">
+            {{row.S}}
+          </div>
+          <div class="div_table_cell">
+            {{row._qty}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Zn}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Cd}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Cu}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Pb}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Au}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Ag}}
+          </div>
+          <div class="div_table_cell">
+            {{row._S}}
+          </div>
+        </div>
+      </div>
     </div>
   </mat-tab>
-  <mat-tab label="Диаграмма 2">
+  <mat-tab label="Извлечение">
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon" aria-hidden="false" aria-label="Извлечение">call_split</mat-icon>
+      Извлечение
+    </ng-template>
     <div style="position: relative; left: 0px; top: 0px; height: 560px; width: 100%; border: solid 1px #999;">
-      <p style="float: right; margin-right: 50px;">Ширина диапазона: {{counter}}</p>
-      <svg class="group2" width="100%" height="520"></svg>
-    </div>
-  </mat-tab>
-  <mat-tab label="Диаграмма 3">
-    <div style="position: relative; left: 0px; top: 0px; height: 560px; width: 100%; border: solid 1px #999;">
-      <p style="float: right; margin-right: 50px;">Ширина диапазона: {{counter}}</p>
-      <svg class="group3" width="100%" height="520"></svg>
+      <div class="div_table" style="border-collapse: collapse; width:100%">
+        <div class="div_table_row">
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">№ пп</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Наименование видов сырья и продукции</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Количество</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Zn</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cd</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cu</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Pb</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Au</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Ag</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">S</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Количество</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Zn</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cd</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cu</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Pb</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Au</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Ag</div>
+          <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">S</div>
+        </div>
+        <div class="div_table_row" *ngFor="let row of data2">
+          <div class="div_table_cell">
+            {{row.id}}
+          </div>
+          <div class="div_table_cell" style="text-align:left">
+            {{row.name}}
+          </div>
+          <div class="div_table_cell">
+            {{row.qty}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Zn}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Cd}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Cu}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Pb}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Au}}
+          </div>
+          <div class="div_table_cell">
+            {{row.Ag}}
+          </div>
+          <div class="div_table_cell">
+            {{row.S}}
+          </div>
+          <div class="div_table_cell">
+            {{row._qty}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Zn}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Cd}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Cu}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Pb}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Au}}
+          </div>
+          <div class="div_table_cell">
+            {{row._Ag}}
+          </div>
+          <div class="div_table_cell">
+            {{row._S}}
+          </div>
+        </div>
+      </div>
     </div>
   </mat-tab>
 </mat-tab-group>

@@ -10,8 +10,9 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./reports/reports.component"), exports);
-__exportStar(require("./report/report.component"), exports);
-__exportStar(require("./log/log.component"), exports);
-__exportStar(require("./print/print.component"), exports);
+__exportStar(require("./settings/settings.component"), exports);
+__exportStar(require("./data-sources/data-sources.component"), exports);
+__exportStar(require("./parameters/parameters.component"), exports);
+__exportStar(require("./parameter/parameter.component"), exports);
+__exportStar(require("./add-prm-dlg/add-prm-dlg.component"), exports);
 //# sourceMappingURL=index.js.map

@@ -10,8 +10,6 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./reports/reports.component"), exports);
-__exportStar(require("./report/report.component"), exports);
-__exportStar(require("./log/log.component"), exports);
-__exportStar(require("./print/print.component"), exports);
+__exportStar(require("./pages"), exports);
+__exportStar(require("./settings.module"), exports);
 //# sourceMappingURL=index.js.map

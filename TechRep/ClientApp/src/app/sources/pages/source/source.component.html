@@ -1,1 +1,82 @@
-<p>source works!</p>
+<h2>Балансовые пробы КЭЦ на 01.05.2021</h2>
+
+<div class="div_table" style="border-collapse: collapse; width:100%">
+  <div class="div_table_row">
+    <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Номер пробы</div>
+    <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Наименование пробы</div>
+    <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Zn</div>
+    <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cd</div>
+    <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Cu</div>
+    <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Pb</div>
+    <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Au</div>
+    <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border: solid 2px #feb41b; position: relative; text-align:center">Ag</div>
+  </div>
+    <div class="div_table_row" *ngFor="let row of data">
+      <div class="div_table_cell" style="padding: 5px 5px 5px 5px; text-align: center; height: 30px; border-left: solid 1px #eee; border-bottom: solid 1px #feb41b; position: relative;">
+        {{row.id}}
+      </div>
+      <div class="div_table_cell" style="text-align: left; padding: 5px 5px 5px 5px; height: 30px; border-left: solid 1px #eee; border-bottom: solid 1px #feb41b; position: relative;">
+        {{row.name}}
+      </div>
+      <div class="div_table_cell" style="    padding: 5px 5px 5px 5px;
+    text-align: center;
+    height: 30px;
+    border-left: solid 1px #eee;
+    border-bottom: solid 1px #feb41b;
+    position: relative;
+    text-align: center
+">
+        {{row.Zn}}
+      </div>
+      <div class="div_table_cell" style="padding: 5px 5px 5px 5px;
+    text-align: center;
+    height: 30px;
+    border-left: solid 1px #eee;
+    border-bottom: solid 1px #feb41b;
+    position: relative;
+    text-align: center
+">
+        {{row.Cd}}
+      </div>
+      <div class="div_table_cell" style="padding: 5px 5px 5px 5px;
+    text-align: center;
+    height: 30px;
+    border-left: solid 1px #eee;
+    border-bottom: solid 1px #feb41b;
+    position: relative;
+    text-align: center
+">
+        {{row.Cu}}
+      </div>
+      <div class="div_table_cell" style="padding: 5px 5px 5px 5px;
+    text-align: center;
+    height: 30px;
+    border-left: solid 1px #eee;
+    border-bottom: solid 1px #feb41b;
+    position: relative;
+    text-align: center
+">
+        {{row.Pb}}
+      </div>
+      <div class="div_table_cell" style="    padding-top: 3px;
+    text-align: center;
+    height: 30px;
+    border-left: solid 1px #eee;
+    border-bottom: solid 1px #feb41b;
+    position: relative;
+    text-align: center
+">
+        {{row.Au}}
+      </div>
+      <div class="div_table_cell" style="    padding-top: 3px;
+    text-align: center;
+    height: 30px;
+    border-left: solid 1px #eee;
+    border-bottom: solid 1px #feb41b;
+    position: relative;
+    text-align: center
+">
+        {{row.Ag}}
+      </div>
+    </div>
+  </div>

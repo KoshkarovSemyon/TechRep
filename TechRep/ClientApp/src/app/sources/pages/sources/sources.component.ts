@@ -32,6 +32,17 @@ const TREE_DATA: SourceNode[] = [
       { id: '2', name: 'Количество серы для розжига печей', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' }
     ]
   }, {
+    id: '1',
+    name: 'Выщелачивательный цех',
+    last_edit_by: 'Иванов А.А.',
+    last_edit_at: new Date(),
+    children: [
+      { id: '2', name: 'Журнал технологических режимов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+      { id: '2', name: 'Справка СТОИР по расходу основных и вспомогательных материалов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+      { id: '2', name: 'Справка цеха КИПиА по расходу энерго ресурсов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+      { id: '2', name: 'Журнал рапортов смен', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+    ]
+  },{
     id: '3',
     name: 'Вельц цех',
     last_edit_by: 'Петров А.А.',
@@ -40,6 +51,8 @@ const TREE_DATA: SourceNode[] = [
       {
         id: '4',
         name: 'Старый цех',
+        last_edit_by: 'Петров А.А.',
+        last_edit_at: new Date(),
         children: [
           { id: '6', name: 'Справка ГМЦ по количеству переданных материалов', last_edit_by: 'Петров А.А.', last_edit_at: new Date(), status: 1, path: '' },
           { id: '6', name: 'Справка КЭЦ по количеству переданных материалов', last_edit_by: 'Петров А.А.', last_edit_at: new Date(), status: 1, path: '' },
@@ -55,6 +68,94 @@ const TREE_DATA: SourceNode[] = [
           { id: '7', name: 'Справка КЭЦ по количеству переданных материалов', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
           { id: '7', name: 'Справка ВыщЦ по количеству переданных материалов', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
         ]
+      },
+    ]
+  }, {
+    id: '3',
+    name: 'КЭЦ',
+    last_edit_by: 'Петров А.А.',
+    last_edit_at: new Date(),
+    children: [
+      {
+        id: '4',
+        name: 'КЭЦ ГМО',
+        last_edit_by: 'Петров А.А.',
+        last_edit_at: new Date(),
+        children: [
+          { id: '6', name: 'Таблицы месячных анализов сырья, продуктов и готовой продукции ПО', last_edit_by: 'Петров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+          { id: '6', name: 'Справка ПО по потерям цинка и кадмия с загрязненными стоками', last_edit_by: 'Петров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+          { id: '6', name: 'Акт снятия остатков незавершенного производства', last_edit_by: 'Петров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+        ]
+      }, {
+        id: '5',
+        name: 'КЭЦ ОЭ',
+        last_edit_by: 'Сидоров А.А.',
+        last_edit_at: new Date(),
+        children: [
+          { id: '7', name: 'Данные с приборов учета по расходу энергоресурсов ', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+          { id: '7', name: 'Справка СТК о результатах инвентаризионного апробирования', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+          { id: '7', name: 'технологический журнал КЭЦ ОЭ', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+        ]
+      }, {
+        id: '5',
+        name: 'КЭЦ КО',
+        last_edit_by: 'Сидоров А.А.',
+        last_edit_at: new Date(),
+        children: [
+          { id: '7', name: 'Данные с приборов учета по расходу энергоресурсов ', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+          { id: '7', name: 'Справка СТК о результатах инвентаризионного апробирования', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+          { id: '7', name: 'Технологический журнал КЭЦ ОЭ', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+        ]
+      }, {
+        id: '5',
+        name: 'КЭЦ АО',
+        last_edit_by: 'Сидоров А.А.',
+        last_edit_at: new Date(),
+        children: [
+          { id: '7', name: 'Данные с приборов учета по расходу энергоресурсов ', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+          { id: '7', name: 'Справка СТК о результатах инвентаризионного апробирования', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+          { id: '7', name: 'Технологический журнал КЭЦ ОЭ', last_edit_by: 'Сидоров А.А.', last_edit_at: new Date(), status: 1, path: '' },
+        ]
+      },
+      {
+        id: '5',
+        name: 'Цеховая таблица анализов',
+        last_edit_by: 'Сидоров А.А.',
+        last_edit_at: new Date(),
+      },
+    ]
+  },
+  {
+    id: '1',
+    name: 'Сернокислотный цех',
+    last_edit_by: 'Иванов А.А.',
+    last_edit_at: new Date(),
+    children: [
+      { id: '2', name: 'Журнал технологических режимов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+      { id: '2', name: 'Справка СТОИР по расходу основных и вспомогательных материалов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+      { id: '2', name: 'Справка цеха КИПиА по расходу энерго ресурсов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+      { id: '2', name: 'Журнал рапортов смен', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+    ]
+  },
+  {
+    id: '1',
+    name: 'Гидрометаллургический цех',
+    last_edit_by: 'Иванов А.А.',
+    last_edit_at: new Date(),
+    children: [
+      { id: '2', name: 'Журнал технологических режимов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+      { id: '2', name: 'Справка СТОИР по расходу основных и вспомогательных материалов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+      { id: '2', name: 'Справка цеха КИПиА по расходу энерго ресурсов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+      { id: '2', name: 'Журнал рапортов смен', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+      {
+        id: '5',
+        name: 'ГМЦ РМО',
+        last_edit_by: 'Сидоров А.А.',
+        last_edit_at: new Date(),
+        children: [
+          { id: '2', name: 'Журнал технологических режимов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+          { id: '2', name: 'Справка СТОИР по расходу основных и вспомогательных материалов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },
+          { id: '2', name: 'Справка цеха КИПиА по расходу энерго ресурсов', last_edit_by: 'Иванов А.А.', last_edit_at: new Date(), status: 1, path: '' },        ]
       },
     ]
   },

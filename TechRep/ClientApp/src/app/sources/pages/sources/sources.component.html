@@ -15,11 +15,11 @@
     <div class="mat-tree-node">
       <button mat-icon-button matTreeNodeToggle style="outline:none; border:0px solid white; background-color:white"
               [attr.aria-label]="'Toggle ' + node.name">
-        <mat-icon class="mat-icon-rtl-mirror">
+        <mat-icon class="mat-icon-rtl-mirror grey-icon">
           {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
         </mat-icon>
       </button>
-      <mat-icon aria-hidden="false" aria-label="Документы">folder</mat-icon>
+      <mat-icon aria-hidden="false" class="grey-icon" aria-label="Документы">folder</mat-icon>
       <div class="div_table_cell" style="width: 50%;">{{ node.name }}</div>
       <div class="div_table_cell" style="width: 20%;">{{this.datepipe.transform(node.last_edit_at, 'dd.MM.yyyy')}}</div>
       <div class="div_table_cell" style="width: 30%;">{{ node.last_edit_by }}</div>

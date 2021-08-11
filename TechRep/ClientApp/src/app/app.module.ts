@@ -9,6 +9,7 @@ import { SourcesModule } from './sources/sources.module';
 import { ReportsModule } from './reports/reports.module';
 import { ScheduleModule } from './schedule/schedule.module';
 import { ExtractionModule } from './extraction/extraction.module';
+import { SettingsModule } from './settings/settings.module';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -18,7 +19,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatIconModule } from '@angular/material/icon';
-import { MatTabsModule } from '@angular/material/tabs';
+//import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     ReportsModule,
     ScheduleModule,
     ExtractionModule,
+    SettingsModule,
     BrowserAnimationsModule,
     MatIconModule,
     //MatTabsModule
