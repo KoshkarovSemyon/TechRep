@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { MatIconModule } from '@angular/material/icon';
-import { MatDialogModule } from '@angular/material';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { SettingsRoutingModule } from './settings-routing.module';
 import { DataSourcesComponent } from './pages/data-sources/data-sources.component';

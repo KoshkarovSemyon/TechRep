@@ -1,1 +1,28 @@
-<p>data-sources works!</p>
+<h2 id="tableLabel">Источники данных</h2>
+
+<p></p>
+
+<p *ngIf="!datasources"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="datasources">
+  <thead>
+    <tr>
+      <th>Ид</th>
+      <th>Название</th>
+      <th>Описание</th>
+      <th>Детали</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let datasource of datasources">
+      <td>{{ datasource.id }}</td>
+      <td>{{ datasource.name }}</td>
+      <td>{{ datasource.description }}</td>
+      <td>
+        <a [routerLink]="['/parameter', datasource.id]">
+          <mat-icon aria-hidden="false" aria-label="Настройки">settings</mat-icon>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>

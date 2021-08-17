@@ -5,12 +5,14 @@ import { DataSourcesComponent } from './pages';
 import { SettingsComponent } from './pages';
 import { ParametersComponent } from './pages';
 import { AddPrmDlgComponent } from './pages';
+import { ParameterComponent } from './pages';
 
 const routes: Routes = [
   { path: 'settings', component: SettingsComponent },
   { path: 'data-sources', component: DataSourcesComponent },
   { path: 'parameters', component: ParametersComponent },
   { path: 'add-prm-dlg', component: AddPrmDlgComponent },
+  { path: 'parameter/:id', component: ParameterComponent },
 ];
 
 @NgModule({

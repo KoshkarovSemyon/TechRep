@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-data-sources',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataSourcesComponent implements OnInit {
 
-  constructor() { }
+  public datasources: DataSource[];
+
+  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+    http.get<DataSource[]>(baseUrl + 'datasource').subscribe(result => {
+      this.datasources = result;
+    }, error => console.error(error));
+  }
 
   ngOnInit() {
   }
 
+}
+
+interface DataSource {
+  id: number;
+  name: string;
+  description: string;
 }

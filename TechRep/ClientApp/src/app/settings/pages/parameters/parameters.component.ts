@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-parameters',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParametersComponent implements OnInit {
 
-  constructor() { }
+  public parameters: Parameter[];
+
+  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+    http.get<Parameter[]>(baseUrl + 'parameter').subscribe(result => {
+      this.parameters = result;
+    }, error => console.error(error));
+  }
 
   ngOnInit() {
   }
 
+}
+
+interface Parameter {
+  id: number;
+  name: string;
+  description: string;
 }

@@ -1,1 +1,22 @@
-<p>parameters works!</p>
+<h2 id="tableLabel">Параметры</h2>
+
+<p></p>
+
+<p *ngIf="!parameters"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="parameters">
+  <thead>
+    <tr>
+      <th>Ид</th>
+      <th>Название</th>
+      <th>Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let prm of parameters">
+      <td>{{ prm.id }}</td>
+      <td>{{ prm.name }}</td>
+      <td>{{ prm.description }}</td>
+    </tr>
+  </tbody>
+</table>

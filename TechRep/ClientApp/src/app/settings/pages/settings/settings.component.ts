@@ -21,7 +21,7 @@ export class SettingsComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+      console.log('The add-prm-dlg was closed');
       this.animal = result;
     });
   }
