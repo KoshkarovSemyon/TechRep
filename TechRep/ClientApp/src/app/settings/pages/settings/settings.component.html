@@ -1,22 +1,18 @@
 <h2>Настройки</h2>
 <a class="nav-link text-dark" [routerLink]="['/data-sources']">
-  <mat-icon aria-hidden="false" aria-label="Источники данных">swap_horiz</mat-icon>
+  <mat-icon aria-hidden="false" aria-label="Источники данных">swap_calls</mat-icon>
   Источники данных
 </a>
-<ul>
-  <li class="nav-item" [routerLinkActive]="['link-active']">
-    <a class="nav-link text-dark" [routerLink]="['/parameters']">
-      <mat-icon aria-hidden="false" aria-label="Параметры">settings</mat-icon>
-    </a>
-  </li>
-  <li class="nav-item" [routerLinkActive]="['link-active']">
-    <a class="nav-link text-dark" [routerLink]="['/add-prm-dlg']">
-      <mat-icon aria-hidden="false" aria-label="Параметры">settings</mat-icon>
-      Добавить параметр
-    </a>
-  </li>
-</ul>
+<a class="nav-link text-dark" [routerLink]="['/departments']">
+  <mat-icon aria-hidden="false" aria-label="Подразделения">group</mat-icon>
+  Подразделения
+</a>
+<a class="nav-link text-dark" [routerLink]="['/input-forms']">
+  <mat-icon aria-hidden="false" aria-label="Формы">content_copy</mat-icon>
+  Формы
+</a>
 
+<!--
 <ol>
   <li>
     <mat-form-field appearance="fill">
@@ -31,3 +27,4 @@
     You chose: <i>{{animal}}</i>
   </li>
 </ol>
+-->

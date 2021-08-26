@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { DataSourcesComponent } from './pages';
 import { SettingsComponent } from './pages';
 import { ParametersComponent } from './pages';
+import { DepartmentsComponent } from './pages';
+import { InputFormsComponent } from './pages';
 import { AddPrmDlgComponent } from './pages';
 import { ParameterComponent } from './pages';
 
@@ -11,6 +13,8 @@ const routes: Routes = [
   { path: 'settings', component: SettingsComponent },
   { path: 'data-sources', component: DataSourcesComponent },
   { path: 'parameters', component: ParametersComponent },
+  { path: 'input-forms', component: InputFormsComponent },
+  { path: 'departments', component: DepartmentsComponent },
   { path: 'add-prm-dlg', component: AddPrmDlgComponent },
   { path: 'parameter/:id', component: ParameterComponent },
 ];

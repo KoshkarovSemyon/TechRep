@@ -3,3 +3,7 @@ export * from './data-sources/data-sources.component';
 export * from './parameters/parameters.component';
 export * from './parameter/parameter.component';
 export * from './add-prm-dlg/add-prm-dlg.component';
+export * from './add-form-dlg/add-form-dlg.component';
+export * from './add-dep-dlg/add-dep-dlg.component';
+export * from './departments/departments.component';
+export * from './input-forms/input-forms.component';

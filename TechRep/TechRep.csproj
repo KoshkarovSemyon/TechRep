@@ -39,6 +39,13 @@
     <None Remove="ClientApp\src\app\settings\index.ts" />
     <None Remove="ClientApp\src\app\settings\pages\index.ts" />
     <None Remove="ClientApp\src\app\settings\settings-routing.module.ts" />
+    <None Remove="ClientApp\src\app\shared\index.ts" />
+    <None Remove="ClientApp\src\app\shared\layout\index.ts" />
+    <None Remove="ClientApp\src\app\shared\models\footer-data.ts" />
+    <None Remove="ClientApp\src\app\shared\models\form-data.ts" />
+    <None Remove="ClientApp\src\app\shared\models\header-data.ts" />
+    <None Remove="ClientApp\src\app\shared\models\parameter.ts" />
+    <None Remove="ClientApp\src\app\shared\shared-routing.module.ts" />
     <None Remove="ClientApp\src\app\sources\index.ts" />
     <None Remove="ClientApp\src\app\sources\pages\index.ts" />
     <None Remove="ClientApp\src\app\sources\sources-routing.module.ts" />
@@ -59,6 +66,13 @@
     <TypeScriptCompile Include="ClientApp\src\app\settings\index.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\settings\pages\index.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\settings\settings-routing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\layout\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\footer-data.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\form-data.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\header-data.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\parameter.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\shared-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\sources\index.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\sources\pages\index.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\sources\sources-routing.module.ts" />

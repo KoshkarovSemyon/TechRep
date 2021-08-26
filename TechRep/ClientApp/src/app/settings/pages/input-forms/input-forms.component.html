@@ -1,0 +1,27 @@
+<h2 id="tableLabel">Формы</h2>
+
+<p *ngIf="!forms"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="forms">
+  <thead>
+    <tr>
+      <th>Ид</th>
+      <th>Название</th>
+      <th>Описание</th>
+      <th>Детали</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let form of forms">
+      <td>{{ form.id }}</td>
+      <td>{{ form.name }}</td>
+      <td>{{ form.description }}</td>
+      <td>
+        <a [routerLink]="['/form', form.id]">
+          <mat-icon aria-hidden="false" aria-label="Настройки">settings</mat-icon>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button mat-raised-button (click)="openDialog()">Добавить форму ручного ввода</button>

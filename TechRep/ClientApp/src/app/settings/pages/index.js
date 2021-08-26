@@ -15,4 +15,8 @@ __exportStar(require("./data-sources/data-sources.component"), exports);
 __exportStar(require("./parameters/parameters.component"), exports);
 __exportStar(require("./parameter/parameter.component"), exports);
 __exportStar(require("./add-prm-dlg/add-prm-dlg.component"), exports);
+__exportStar(require("./add-form-dlg/add-form-dlg.component"), exports);
+__exportStar(require("./add-dep-dlg/add-dep-dlg.component"), exports);
+__exportStar(require("./departments/departments.component"), exports);
+__exportStar(require("./input-forms/input-forms.component"), exports);
 //# sourceMappingURL=index.js.map
